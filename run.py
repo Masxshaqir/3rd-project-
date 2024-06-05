@@ -55,3 +55,5 @@ def main():
 # This line ensures that the main function runs when the script is executed
 if __name__ == "__main__":
     main()
+
+    data_str = input("Enter your data here:\n")
