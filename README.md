@@ -1,32 +1,40 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+# BMI Calculator
 
-Welcome,
+A simple Python application to calculate Body Mass Index (BMI) and determine the BMI category based on the user's weight and height.
 
-This is the Code Institute student template for deploying your third portfolio project, the Python command-line project. The last update to this file was: **May 14, 2024**
+## Features
 
-## Reminders
+- Calculates BMI using the formula: weight (kg) / (height (m) ^ 2)
+- Determines BMI category:
+  - Underweight: BMI < 18.5
+  - Normal weight: 18.5 <= BMI < 24.9
+  - Overweight: 25 <= BMI < 29.9
+  - Obesity: BMI >= 30
+- Validates user input to ensure weight and height are positive numbers
 
-- Your code must be placed in the `run.py` file
-- Your dependencies must be placed in the `requirements.txt` file
-- Do not edit any of the other files or your code may not deploy properly
+## Requirements
 
-## Creating the Heroku app
+- Python 3.x
 
-When you create the app, you will need to add two buildpacks from the _Settings_ tab. The ordering is as follows:
+## How to Run
 
-1. `heroku/python`
-2. `heroku/nodejs`
+1. Clone this repository or download the `bmi_calculator.py` file.
+2. Open a terminal or command prompt.
+3. Navigate to the directory where the `bmi_calculator.py` file is located.
+4. Run the script using Python:
 
-You must then create a _Config Var_ called `PORT`. Set this to `8000`
+    ```bash
+    python bmi_calculator.py
+    ```
 
-If you have credentials, such as in the Love Sandwiches project, you must create another _Config Var_ called `CREDS` and paste the JSON into the value field.
+5. Follow the prompts to input your weight in kilograms and height in meters.
 
-Connect your GitHub repository and deploy as normal.
+## Sample Run
 
-## Constraints
+```plaintext
+BMI Calculator
+Enter your weight in kilograms: 70
+Enter your height in meters: 1.75
 
-The deployment terminal is set to 80 columns by 24 rows. That means that each line of text needs to be 80 characters or less otherwise it will be wrapped onto a second line.
-
----
-
-Happy coding!
+Your BMI is: 22.86
+Category: Normal weight
